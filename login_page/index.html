@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Roboto"],
+          },
+          extend: {
+            colors: {
+              reply: "#0070B7",
+            },
+          },
+        },
+      };
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <div
+      class="flex flex-col h-screen items-center justify-center min-[320px]:p-1 sm:p-24"
+    >
+      <img
+        src="/assets/upper.png"
+        class="absolute top-0 w-full z-10"
+        alt="Top Image"
+      />
+      <main
+        class="container sm:flex sm:flex-col items-center justify-between p-4"
+      >
+        <div
+          class="z-10 w-full max-w-5xl space-y-4 sm:flex sm:items-center sm:justify-between sm:font-Roboto sm:text-sm sm:space-x-4"
+        >
+          <div
+            class="w-full rounded flex flex-col items-center justify-between"
+          >
+            <img src="/assets/illustrator_drop_file.png" alt="drop file app" />
+            <h1 class="text-3xl text-center p-4">Drop File App</h1>
+            <p class="text-center p-4">
+              Easily and securely collect file attachments on your Eloqua
+              Landing Pages.
+            </p>
+          </div>
+
+          <div
+            class="w-full rounded bg-white shadow-xl hover:shadow-2xl text-left p-10"
+          >
+            <form
+              class="text-black my-2 flex flex-col justify-between h-[500px]"
+            >
+              <div class="space-y-3">
+                <h2 class="text-3xl">Login</h2>
+                <div>
+                  Please enter your Eloqua username and password. Compnay name
+                  is not required.
+                </div>
+                <div class="grid grid-cols-6 my-3">
+                  <label for="username" class="col-span-6 pt-3">Username</label>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    class="col-span-6 border border-gray-300 rounded p-2"
+                  />
+                  <label for="password" class="col-span-6 pt-3">Password</label>
+                  <input
+                    type="text"
+                    name="password"
+                    id="password"
+                    class="col-span-6 border border-gray-300 rounded p-2"
+                  />
+                </div>
+              </div>
+
+              <div class="text-right">
+                <button class="bg-reply p-2 text-white rounded">
+                  Submit →
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <img
+        src="/assets/dupper.png"
+        class="absolute bottom-0 w-full z-10"
+        alt="Bottom Image"
+      />
+      <span class="absolute bottom-0 text-sm text-gray-400 p-2"
+        >Privacy Police | Developed by Like Reply GmbH</span
+      >
+    </div>
+  </body>
+</html>
