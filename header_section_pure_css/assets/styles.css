@@ -85,13 +85,19 @@ body {
   padding: 2rem;
   border-radius: 10px;
   margin: 2rem 0;
-  text-align: center;
+  text-align: left;
+  width: 100%;
 }
 
 .briefing a {
   color: var(--cyan);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.5;
+  display: block;
+}
+.briefing a:hover {
+  color: var(--text);
 }
 
 pre {
