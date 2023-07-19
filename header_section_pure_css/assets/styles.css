@@ -51,6 +51,7 @@ body {
 
 #product .image-background:nth-of-type(1):hover {
   background-color: var(--hover);
+  cursor: pointer;
 }
 
 #product .image-background:nth-of-type(2) {
@@ -68,6 +69,7 @@ body {
 
 #product .image-background:nth-of-type(2):hover {
   background-color: var(--hover);
+  cursor: pointer;
 }
 
 #product .description {
@@ -77,4 +79,67 @@ body {
   font-weight: 700;
   margin: 0 auto;
   color: var(--text);
+}
+
+#contact {
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.briefing a {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+.load {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background: black;
+  border-radius: 10px;
+  margin-top: 2rem;
+  display: none;
+}
+
+.term {
+  font-family: monospace;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 2em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.term:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
