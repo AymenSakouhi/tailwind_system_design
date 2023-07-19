@@ -4,4 +4,4 @@
 
 ### 😃, 🧘🏻‍♂️, 🌍, 🌦️, 🥖, 🚗, 📱, 🎉, ❤️, ✅,
 
-[Click me!!!](https://64b8576d9dcc33008bf8911e--papaya-figolla-3659fa.netlify.app/)
+[Example beautiful website](https://64b85b5288e573007fac5f06--luxury-profiterole-07299b.netlify.app/)
