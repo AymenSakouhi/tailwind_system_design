@@ -1,0 +1,80 @@
+@import url("https://fonts.cdnfonts.com/css/analphabetism");
+
+:root {
+  --color-primary: #027333;
+  --text: #fff;
+  --font: "analphabetism", sans-serif;
+  --magento-orange: #f26b00;
+  --magento-blue: #007db8;
+  --hover: #7ef539;
+  --cyan: #00b8d9;
+  --dark: #1d1d1d;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: var(--font);
+  color: var(--text);
+  font-weight: 700;
+}
+
+#intro .name {
+  line-height: 1.5;
+}
+
+#intro .name span {
+  font-weight: 700;
+  font-size: 5rem;
+  display: block;
+  color: var(--magento-orange);
+  max-width: 100%;
+}
+
+#intro .description,
+#intro .purpose {
+  font-size: 1.5rem;
+}
+
+#product .image-background:nth-of-type(1) {
+  background: url("./drink-cola.png") center center no-repeat;
+  background-color: var(--magento-orange);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+#product .image-background:nth-of-type(1):hover {
+  background-color: var(--hover);
+}
+
+#product .image-background:nth-of-type(2) {
+  background: url("./fanta.png") center center no-repeat;
+  background-color: var(--cyan);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#product .image-background:nth-of-type(2):hover {
+  background-color: var(--hover);
+}
+
+#product .description {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--magento-blue);
+  font-weight: 700;
+  margin: 0 auto;
+  color: var(--text);
+}
